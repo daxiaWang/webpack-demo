@@ -18,7 +18,23 @@
             <img style="width: 100%;" src="./assets/images/wp.jpeg" alt="">
         </div>
         <div class="cont-img1"></div>
+        <div class="cont-img2"></div>
     </div>
 </body>
+
+<script>
+    import Icon from './assets/images/3.jpg';
+    // var imgSrc = document.getElementsByClassName("cont-img2")
+    const element = document.createElement('div');
+    element.classList.add('cont-img2');
+
+
+    const myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.innerHtml(myIcon);
+
+    return element;
+</script>
 
 </html>
